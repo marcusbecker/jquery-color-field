@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jquery Color Field</title>
+        <link type="text/css" href="jquery.colorfield.css" rel="stylesheet">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.colorfield.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#color").colorfield({autoInit: true}); //$.colorfield._add("#color");
+            $("#color2").colorfield({showColor: false, colorField: true});
+            //$("#color").colorfield("destory");
+        });
+        </script>
+    </head>
+    <body>
+        <input id="color" type="text" name="color" value="#FF0000" />
+        <input id="color2" type="text" name="color2" value="rgb(0,255,0)" />
+    </body>
+</html>
